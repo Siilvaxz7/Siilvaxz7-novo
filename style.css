@@ -85,7 +85,7 @@ table {
 
 th,
 td {
-    border: 1px solid white;
+    border: 4px solid white;
     padding: 10px;
 }
 
@@ -129,4 +129,36 @@ th {
     h1 {
         font-size: 28px;
     }
+
+}
+
+.whats {
+    position: fixed;
+    bottom: 4px;
+    right: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+
+}
+
+.zap:hover {
+
+    border: 2px solid;
+    border-color: transparent;
+    border-radius: 100%;
+}
+
+.instagram {
+    position: fixed;
+    bottom: 4px;
+    right: 58px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.insta:hover {
+
+    border: 2px solid;
+    border-color: transparent;
+    border-radius: 100%;
 }
