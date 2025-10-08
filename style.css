@@ -1,11 +1,18 @@
 * {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+
+}
+
+
+body.primeiro {
+    overflow: hidden;
 }
 
 body {
     margin: 0;
     background-color: black;
+    z-index: 1;
 }
 
 .topo {
@@ -13,6 +20,7 @@ body {
     padding: 20px;
     text-align: center;
     cursor: default;
+    user-select: none;
 }
 
 .links {
@@ -21,6 +29,8 @@ body {
     padding: 10px;
     margin-bottom: 2px;
     text-align: center;
+    user-select: none;
+
 }
 
 .links a {
@@ -47,14 +57,50 @@ iframe {
 .lista {
     color: white;
     font-size: 20px;
+    position: fixed;
+    left: 25px;
+    font-size: 23px;
+    user-select: text;
 }
 
-.voltar {
-    margin-bottom: 50px;
+.titulorotina {
+    cursor: default;
+    color: white;
+    user-select: none;
+}
+
+.inicio {
+    background-color: transparent;
+    gap: 10px;
+    padding: 10px;
+    margin-bottom: 2px;
+    text-align: center;
+    position: fixed;
+    bottom: 8px;
+    left: 40%;
+    right: 40%;
+    user-select: none;
+}
+
+.inicio a {
+    color: blueviolet;
+    padding: 12px 18px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    transition: 0.3s;
+
+
+}
+
+.inicio a:hover {
+    background-color: #222;
+    border-color: blueviolet;
 }
 
 .semanas {
     max-width: 1920px;
+    user-select: none;
 }
 
 
@@ -64,7 +110,7 @@ iframe {
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
-
+    user-select: none;
     margin: 20px auto;
 }
 
@@ -82,15 +128,18 @@ table {
     color: white;
     text-align: center;
     background-color: black;
+    user-select: none;
 }
 
 th,
 td {
     border: 4px solid white;
     padding: 10px;
+    user-select: none;
 }
 
 th {
+    user-select: none;
     background-color: black;
 }
 
@@ -100,6 +149,7 @@ th {
     gap: 10px;
     padding: 10px;
     text-align: center;
+    user-select: none;
 }
 
 .links a {
@@ -133,6 +183,31 @@ th {
 
 }
 
+.treinotitulo {
+    user-select: none;
+}
+
+
+img {
+
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    pointer-events: auto;
+}
+
+a {
+
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    pointer-events: auto;
+}
+
 .whats {
     position: fixed;
     bottom: 4px;
@@ -163,4 +238,3 @@ th {
     border-color: transparent;
     border-radius: 100%;
 }
-
