@@ -12,6 +12,7 @@ body {
     background-color: black;
     padding: 20px;
     text-align: center;
+    cursor: default;
 }
 
 .links {
@@ -162,3 +163,4 @@ th {
     border-color: transparent;
     border-radius: 100%;
 }
+
